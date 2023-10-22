@@ -1,0 +1,24 @@
+---
+import { ModeToggle } from "@/components/ModeToggle";
+import { Menubar, MenubarContent, MenubarItem, MenubarMenu, MenubarSeparator, MenubarShortcut, MenubarTrigger } from "@/components/ui/menubar";
+---
+
+<header class="sticky top-0 z-50 backdrop-blur p-4">
+  <div class="container flex items-center justify-center h-14">
+    <div class="mr-4 flex space-x-4 gap-2">
+      <a href="" class="mr-6 items-center font-bold justify-center text-center gap-2 inline-flex"
+        >X-TEI
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="blue" stroke="#fafaf9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-badge-check"
+          ><path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z"></path><path d="m9 12 2 2 4-4"></path></svg
+        >
+      </a>
+      <div class="items-center space-x-6 text-sm justify-end font-medium hidden md:flex">
+        <a href="" class="transition-colors hover:text-foreground/80 text-foreground/60">Home</a>
+        <a href="" class="transition-colors hover:text-foreground/80 text-foreground/60">About</a>
+        <a href="" class="transition-colors hover:text-foreground/80 text-foreground/60">Struktur</a>
+        <a href="" class="transition-colors hover:text-foreground/80 text-foreground/60">Contact</a>
+      </div>
+      <ModeToggle client:load />
+    </div>
+  </div>
+</header>
