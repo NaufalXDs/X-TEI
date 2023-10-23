@@ -5,9 +5,15 @@ import * as React from "react";
 import { BadgeCheck, Sun } from "lucide-react";
 import Header from "@/components/Header.astro";
 import BaseHead from "@/components/BaseHead.astro";
-import Layout from "@/components/Layout.astro";
+const {title} = Astro.props;
 ---
 
-<Layout title="Home">
-
-</Layout>
+<html lang="en">
+  <head>
+    <BaseHead title={title}/>
+  </head>
+  <body>
+   <Header/>
+   <slot/>
+  </body>
+</html>
